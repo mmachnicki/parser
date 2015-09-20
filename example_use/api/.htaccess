@@ -1,0 +1,5 @@
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine On
+RewriteBase /xmlParser/api
+RewriteRule ^([A-Za-z0-9]+) index\.php?service=$1 [QSA,NC,L]
